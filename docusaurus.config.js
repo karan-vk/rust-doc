@@ -7,11 +7,21 @@ module.exports = {
   favicon: "img/favicon.svg",
   organizationName: "karan-vk", // Usually your GitHub org/user name.
   projectName: "rust-doc", // Usually your repo name.
+  // themes: ["@docusaurus/theme-live-codeblock"],
   themeConfig: {
+    prism: {
+      theme: require("prism-react-renderer/themes/dracula"),
+      additionalLanguages: ["rust"],
+    },
+    googleAnalytics: {
+      trackingID: "UA-155281862-2",
+      // Optional fields.
+      anonymizeIP: true, // Should IPs be anonymized?
+    },
     navbar: {
       title: "Rust Learning",
       logo: {
-        alt: "My Site Logo",
+        alt: "Rust Logo",
         src: "img/logo.svg",
       },
       items: [
@@ -36,7 +46,7 @@ module.exports = {
           title: "Docs",
           items: [
             {
-              label: "Style Guide",
+              label: "Get Started",
               to: "docs/",
             },
             {
@@ -54,7 +64,7 @@ module.exports = {
             },
             {
               label: "Instagram",
-              href: "instagram.com/the.big_k/",
+              href: "https://instagram.com/the.big_k/",
             },
             {
               label: "LinkedIn",
@@ -79,6 +89,63 @@ module.exports = {
       copyright: `Copyright © ${new Date().getFullYear()} Rust learning, Inc. Built with React.`,
     },
   },
+  plugins: [
+    [
+      "@docusaurus/plugin-pwa",
+      {
+        // debug: true,
+        offlineModeActivationStrategies: ["appInstalled", "queryString"],
+        pwaHead: [
+          {
+            tagName: "link",
+            rel: "icon",
+            href: "/img/logo.png",
+          },
+          {
+            tagName: "link",
+            rel: "manifest",
+            href: "/rust-doc/manifest.json",
+          },
+          {
+            tagName: "meta",
+            name: "theme-color",
+            content: "rgb(255, 89, 0)",
+          },
+          {
+            tagName: "meta",
+            name: "apple-mobile-web-app-capable",
+            content: "yes",
+          },
+          {
+            tagName: "meta",
+            name: "apple-mobile-web-app-status-bar-style",
+            content: "#000",
+          },
+          {
+            tagName: "link",
+            rel: "apple-touch-icon",
+            href: "/img/logo-512.png",
+          },
+          {
+            tagName: "link",
+            rel: "mask-icon",
+            href: "/img/logo-512.svg",
+            color: "rgb(37, 194, 160)",
+          },
+          {
+            tagName: "meta",
+            name: "msapplication-TileImage",
+            content: "/img/logo-512.png",
+          },
+          {
+            tagName: "meta",
+            name: "msapplication-TileColor",
+            content: "#000",
+          },
+        ],
+      },
+    ],
+  ],
   presets: [
     [
       "@docusaurus/preset-classic",

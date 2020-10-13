@@ -27,12 +27,12 @@ const features = [
     ),
   },
   {
-    title: "Powered by React",
+    title: "Well I have to work my assasin OFF",
     imageUrl: "img/working.png",
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        It's not so easy to Learn Rust, Well atlest shine in it So I set my
+        journey to Rust
       </>
     ),
   },
@@ -57,10 +57,7 @@ function Home() {
   const context = useDocusaurusContext();
   const { siteConfig = {} } = context;
   return (
-    <Layout
-      title={`${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />"
-    >
+    <Layout title={`${siteConfig.title}`} description="Rust learning Journey">
       <header className={clsx("hero hero--primary", styles.heroBanner)}>
         <div className="container">
           <img src="img/logo.svg"></img>
@@ -69,12 +66,11 @@ function Home() {
               style={{
                 color: "black",
                 fontFamily: "Alfa Slab One",
-                marginRight: "0.2em",
               }}
             >
               Rust
             </span>
-            Learning
+            <span style={{ marginLeft: "13px" }}>Learning</span>
           </h1>
           <p className="hero__subtitle">
             A language empowering everyone to build reliable and efficient
