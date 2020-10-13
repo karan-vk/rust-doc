@@ -1,8 +1,8 @@
 {
     "name": "Rust Learning Journey",
     "short_name": "Rust Learn",
-    "theme_color": "#501818",
-    "background_color": "#3276ac",
+    "theme_color": "#000000",
+    "background_color": "#ff5900",
     "display": "standalone",
     "scope": "/rust-doc/",
     "start_url": "/rust-doc/",
