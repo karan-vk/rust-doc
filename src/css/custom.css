@@ -16,6 +16,7 @@
   --ifm-color-primary-lightest: rgb(146, 224, 208);
   --ifm-code-font-size: 95%;
 }
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
 
 .docusaurus-highlight-code-line {
   background-color: rgb(72, 77, 91);

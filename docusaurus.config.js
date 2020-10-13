@@ -1,15 +1,15 @@
 module.exports = {
-  title: "Rust",
-  tagline: "Rust learning by Karan",
-  url: "https://your-docusaurus-test-site.com",
-  baseUrl: "/",
+  title: "Rust Learning",
+  tagline: "by Karan",
+  url: "https://karan-vk.github.io",
+  baseUrl: "/rust-doc/",
   onBrokenLinks: "throw",
-  favicon: "img/favicon.ico",
-  organizationName: "facebook", // Usually your GitHub org/user name.
-  projectName: "docusaurus", // Usually your repo name.
+  favicon: "img/favicon.svg",
+  organizationName: "karan-vk", // Usually your GitHub org/user name.
+  projectName: "rust-doc", // Usually your repo name.
   themeConfig: {
     navbar: {
-      title: "My Site",
+      title: "Rust Learning",
       logo: {
         alt: "My Site Logo",
         src: "img/logo.svg",
@@ -49,16 +49,16 @@ module.exports = {
           title: "Community",
           items: [
             {
-              label: "Stack Overflow",
-              href: "https://stackoverflow.com/questions/tagged/docusaurus",
+              label: "Github",
+              href: "https://github.com/karan-vk",
             },
             {
-              label: "Discord",
-              href: "https://discordapp.com/invite/docusaurus",
+              label: "Instagram",
+              href: "instagram.com/the.big_k/",
             },
             {
-              label: "Twitter",
-              href: "https://twitter.com/docusaurus",
+              label: "LinkedIn",
+              href: "https://www.linkedin.com/in/karan-vk/",
             },
           ],
         },
@@ -70,13 +70,13 @@ module.exports = {
               to: "blog",
             },
             {
-              label: "GitHub",
+              label: "Found a typo ??",
               href: "https://github.com/karan-vk/rust-doc",
             },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Rust learning, Inc. Built with React.`,
     },
   },
   presets: [
