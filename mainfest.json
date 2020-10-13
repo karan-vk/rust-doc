@@ -1,0 +1,48 @@
+{
+    "short_name": "Rust learning",
+    "name": "Journey to Rust",
+    "description": "The way I Learn Rust",
+    "icons": [
+        {
+            "src": "/img/logo-192.png",
+            "type": "image/png",
+            "sizes": "192x192"
+        },
+        {
+            "src": "/img/logo-512.png",
+            "type": "image/png",
+            "sizes": "512x512"
+        }
+    ],
+    "start_url": "/?source=pwa",
+    "background_color": "#3367D6",
+    "display": "standalone",
+    "scope": "/",
+    "theme_color": "#3367D6",
+    "shortcuts": [
+        {
+            "name": "Rust Docs",
+            "short_name": "Docs",
+            "description": "Documentation for Rust Language",
+            "url": "/docs?source=pwa",
+            "icons": [
+                {
+                    "src": "/images/logo-192.png",
+                    "sizes": "192x192"
+                }
+            ]
+        },
+        {
+            "name": "Get started",
+            "short_name": "Get Sta..",
+            "description": "Installation instructions",
+            "url": "/docs/doc2?source=pwa",
+            "icons": [
+                {
+                    "src": "/images/logo-192.png",
+                    "sizes": "192x192"
+                }
+            ]
+        }
+    ]
+}
