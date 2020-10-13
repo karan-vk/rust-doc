@@ -24,7 +24,7 @@
             "name": "Rust Docs",
             "short_name": "Docs",
             "description": "Documentation for Rust Language",
-            "url": "/docs?source=pwa",
+            "url": "/?source=pwa",
             "icons": [
                 {
                     "src": "/images/logo-192.png",
@@ -36,7 +36,7 @@
             "name": "Get started",
             "short_name": "Get Sta..",
             "description": "Installation instructions",
-            "url": "/docs/doc2?source=pwa",
+            "url": "/?source=pwa",
             "icons": [
                 {
                     "src": "/images/logo-192.png",
